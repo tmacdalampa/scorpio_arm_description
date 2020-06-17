@@ -6,7 +6,7 @@
     default="False" />
   <param
     name="robot_description"
-    textfile="$(find scorpio_arm_description)/robots/scorpio_arm_description.urdf" />
+    textfile="$(find scorpio_arm_description_v2)/robots/scorpio_arm_description_v2.urdf" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find scorpio_arm_description)/urdf.rviz" />
+    args="-d $(find scorpio_arm_description_v2)/urdf.rviz" />
 </launch>

@@ -1,0 +1,361 @@
+<robot
+  name="scorpio_arm_description_v2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00231747398718491 0.000926090335802016 0.0320057013975666"
+        rpy="0 0 0" />
+      <mass
+        value="2.11601477785116" />
+      <inertia
+        ixx="0.00202448875112996"
+        ixy="4.37456323015974E-05"
+        ixz="0.000128545243673656"
+        iyy="0.00131223237035268"
+        iyz="-0.000182115234066843"
+        izz="0.000782866740229756" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.000477211763040611 -0.00737171225105654 0.0673262959495374"
+        rpy="0 0 0" />
+      <mass
+        value="0.462790481374203" />
+      <inertia
+        ixx="0.000939965910200995"
+        ixy="1.64506977488475E-06"
+        ixz="2.63906539352487E-05"
+        iyy="0.00212746857726697"
+        iyz="0.000232679816143088"
+        izz="0.00200259662994076" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1115"
+      rpy="1.65436122510606E-24 -2.16239755607771E-34 1.77925042286121E-10" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.000424568456060098 0.353718613538131 -0.0239145484479153"
+        rpy="0 0 0" />
+      <mass
+        value="0.449203640099021" />
+      <inertia
+        ixx="0.0015378612168218"
+        ixy="-8.28836534643497E-05"
+        ixz="-8.85331181664643E-06"
+        iyy="0.000798472791972848"
+        iyz="0.000260149183654035"
+        izz="0.00223846447973205" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.00775000309120119 0.314499999923826"
+      rpy="1.57079631696602 1.748803E-18 3.14159265358979" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.00015227090313541 0.0924043712970327 0.00966148754882001"
+        rpy="0 0 0" />
+      <mass
+        value="0.417553118840387" />
+      <inertia
+        ixx="0.000778760838885271"
+        ixy="-3.13198465335902E-05"
+        ixz="9.73666822020859E-06"
+        iyy="0.00074740822193102"
+        iyz="0.000238313418273415"
+        izz="0.00134923661677296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0.425000094137017 0.0409999999973247"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.029607886080566 0.0701646372502981 0.115925469546175"
+        rpy="0 0 0" />
+      <mass
+        value="0.213762001941474" />
+      <inertia
+        ixx="0.000604647040015572"
+        ixy="-8.70664601137527E-05"
+        ixz="-0.000122124889347993"
+        iyy="0.00047082788249587"
+        iyz="-0.000282672676122053"
+        izz="0.000268812803761431" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="-1.49404937263287E-05 0.227498306290618 -0.0332478801440056"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.0164540607163492 -0.0132001765719647 0.0535429526197122"
+        rpy="0 0 0" />
+      <mass
+        value="0.081165330686096" />
+      <inertia
+        ixx="3.82422818938212E-05"
+        ixy="-3.51814648257472E-05"
+        ixz="2.221162370842E-07"
+        iyy="7.49049082009084E-05"
+        iyz="3.14990513890325E-06"
+        izz="9.12577041800575E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="1.61883599965473E-05 0.0570007543469801 0.197500000000056"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.0245655824144414 -0.00933790417108124 0.00780295785191365"
+        rpy="0 0 0" />
+      <mass
+        value="0.15082312906552" />
+      <inertia
+        ixx="8.96339968255372E-05"
+        ixy="-1.01492117426893E-06"
+        ixz="-6.08633423740869E-05"
+        iyy="0.000133450050969155"
+        iyz="-1.49130492191954E-05"
+        izz="8.40574169550522E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scorpio_arm_description_v2/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="-3.11288537894708E-05 0.0754015995721991 0.0570028742029668"
+      rpy="-1.5707963267949 -1.04851706378525E-28 -2.11069071793014E-14" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
