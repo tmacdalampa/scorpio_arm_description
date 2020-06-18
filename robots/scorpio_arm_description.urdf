@@ -1,20 +1,20 @@
 <robot
-  name="scorpio_arm_description_v3">
+  name="scorpio_arm_description">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.0023174739871849 0.000926090335802019 0.0320057013975666"
+        xyz="-0.0023174739871849 0.000926090335802012 0.0320057013975666"
         rpy="0 0 0" />
       <mass
         value="2.11601477785116" />
       <inertia
         ixx="0.00202448875112996"
-        ixy="4.37456323015974E-05"
+        ixy="4.37456323015973E-05"
         ixz="0.000128545243673656"
         iyy="0.00131223237035268"
         iyz="-0.000182115234066843"
-        izz="0.000782866740229757" />
+        izz="0.000782866740229756" />
     </inertial>
     <visual>
       <origin
@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/base_link.STL" />
+          filename="package://scorpio_arm_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -36,7 +36,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/base_link.STL" />
+          filename="package://scorpio_arm_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -44,14 +44,14 @@
     name="link1">
     <inertial>
       <origin
-        xyz="0.000477211763040632 -0.00737171225105655 0.0673262959495374"
+        xyz="0.000477211763040618 -0.00737171225105655 0.0673262959495374"
         rpy="0 0 0" />
       <mass
-        value="0.462790481374202" />
+        value="0.462790481374203" />
       <inertia
         ixx="0.000939965910200995"
-        ixy="1.64506977488456E-06"
-        ixz="2.63906539352487E-05"
+        ixy="1.64506977488472E-06"
+        ixz="2.63906539352481E-05"
         iyy="0.00212746857726697"
         iyz="0.000232679816143088"
         izz="0.00200259662994076" />
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link1.STL" />
+          filename="package://scorpio_arm_description/meshes/link1.STL" />
       </geometry>
       <material
         name="">
@@ -76,7 +76,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link1.STL" />
+          filename="package://scorpio_arm_description/meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -97,17 +97,17 @@
     name="link2">
     <inertial>
       <origin
-        xyz="0.000424568456060081 0.353718613538131 -0.0239145484479153"
+        xyz="0.000424568456060078 0.353718613538131 -0.0239145484479153"
         rpy="0 0 0" />
       <mass
         value="0.449203640099021" />
       <inertia
-        ixx="0.00153786121682179"
-        ixy="-8.28836534643507E-05"
-        ixz="-8.85331181664693E-06"
+        ixx="0.0015378612168218"
+        ixy="-8.28836534643506E-05"
+        ixz="-8.8533118166461E-06"
         iyy="0.000798472791972848"
-        iyz="0.000260149183654035"
-        izz="0.00223846447973204" />
+        iyz="0.000260149183654036"
+        izz="0.00223846447973205" />
     </inertial>
     <visual>
       <origin
@@ -115,7 +115,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link2.STL" />
+          filename="package://scorpio_arm_description/meshes/link2.STL" />
       </geometry>
       <material
         name="">
@@ -129,7 +129,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link2.STL" />
+          filename="package://scorpio_arm_description/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -150,15 +150,15 @@
     name="link3">
     <inertial>
       <origin
-        xyz="0.000152270903135417 0.0924043712970327 0.00966148754882001"
+        xyz="0.000152270903135399 0.0924043712970328 0.00966148754882001"
         rpy="0 0 0" />
       <mass
         value="0.417553118840387" />
       <inertia
-        ixx="0.000778760838885271"
-        ixy="-3.1319846533591E-05"
-        ixz="9.73666822020879E-06"
-        iyy="0.00074740822193102"
+        ixx="0.000778760838885269"
+        ixy="-3.13198465335913E-05"
+        ixz="9.73666822020826E-06"
+        iyy="0.000747408221931019"
         iyz="0.000238313418273415"
         izz="0.00134923661677296" />
     </inertial>
@@ -168,12 +168,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link3.STL" />
+          filename="package://scorpio_arm_description/meshes/link3.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
       </material>
     </visual>
     <collision>
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link3.STL" />
+          filename="package://scorpio_arm_description/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -203,15 +203,15 @@
     name="link4">
     <inertial>
       <origin
-        xyz="-0.000109431918942657 0.077158563508547 0.125643446015501"
+        xyz="-0.000109431918942653 0.077158563508547 0.125643446015501"
         rpy="0 0 0" />
       <mass
         value="0.389829536577821" />
       <inertia
         ixx="0.000675923696287507"
-        ixy="1.42692185757278E-05"
-        ixz="1.80236338044173E-05"
-        iyy="0.000935956861167346"
+        ixy="1.42692185757281E-05"
+        ixz="1.80236338044167E-05"
+        iyy="0.000935956861167347"
         iyz="-0.000316733780223225"
         izz="0.000711962809217492" />
     </inertial>
@@ -221,7 +221,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link4.STL" />
+          filename="package://scorpio_arm_description/meshes/link4.STL" />
       </geometry>
       <material
         name="">
@@ -235,7 +235,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link4.STL" />
+          filename="package://scorpio_arm_description/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -256,17 +256,17 @@
     name="link5">
     <inertial>
       <origin
-        xyz="-0.0164538792900365 -0.0131997782617819 0.0535428562871828"
+        xyz="-0.0164538792900367 -0.0131997782617814 0.0535428562871822"
         rpy="0 0 0" />
       <mass
-        value="0.0811646525056535" />
+        value="0.0811646525056553" />
       <inertia
-        ixx="3.82416724069144E-05"
-        ixy="-3.5180959108023E-05"
-        ixz="2.21993678801651E-07"
-        iyy="7.49045940980443E-05"
-        iyz="3.14976478834891E-06"
-        izz="9.12568490681769E-05" />
+        ixx="3.8241672406913E-05"
+        ixy="-3.51809591080221E-05"
+        ixz="2.21993678800905E-07"
+        iyy="7.49045940980439E-05"
+        iyz="3.14976478834827E-06"
+        izz="9.12568490681757E-05" />
     </inertial>
     <visual>
       <origin
@@ -274,7 +274,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link5.STL" />
+          filename="package://scorpio_arm_description/meshes/link5.STL" />
       </geometry>
       <material
         name="">
@@ -288,7 +288,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link5.STL" />
+          filename="package://scorpio_arm_description/meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -309,17 +309,17 @@
     name="link6">
     <inertial>
       <origin
-        xyz="0.0140802343930933 0.00071520282148415 -0.02424013994588"
+        xyz="0.0140802343921899 0.000715202824271812 -0.0242401399481398"
         rpy="0 0 0" />
       <mass
-        value="0.27456433038843" />
+        value="0.274564330363397" />
       <inertia
-        ixx="0.000570513704789326"
-        ixy="3.53601263287756E-05"
-        ixz="-0.0001835018536269"
-        iyy="0.000602989236811894"
-        iyz="0.000127335543333261"
-        izz="0.000179445348610673" />
+        ixx="0.000570513704751697"
+        ixy="3.53601263212298E-05"
+        ixz="-0.0001835018536208"
+        iyy="0.000602989236794198"
+        iyz="0.000127335543314514"
+        izz="0.000179445348585875" />
     </inertial>
     <visual>
       <origin
@@ -327,7 +327,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link6.STL" />
+          filename="package://scorpio_arm_description/meshes/link6.STL" />
       </geometry>
       <material
         name="">
@@ -341,7 +341,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://scorpio_arm_description_v3/meshes/link6.STL" />
+          filename="package://scorpio_arm_description/meshes/link6.STL" />
       </geometry>
     </collision>
   </link>

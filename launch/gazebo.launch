@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find scorpio_arm_description_v3)/robots/scorpio_arm_description_v3.urdf -urdf -model scorpio_arm_description_v3"
+    args="-file $(find scorpio_arm_description)/robots/scorpio_arm_description.urdf -urdf -model scorpio_arm_description"
     output="screen" />
   <node
     name="fake_joint_calibration"
